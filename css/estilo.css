@@ -1,0 +1,131 @@
+body{background-image: url("../img/nebulosaorion.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+padding: 0%;
+margin: 0%;
+font-family: "Carter One", system-ui;
+
+}
+
+
+:root{
+    --color_text: #fdfdfd;
+    --footer: #00000075;
+    --color_bg_text: #4242429d; 
+    --color_bg: #000000;
+    --color_text_nav: #2e54fc;
+}
+
+
+.nav{
+    padding: 10px;
+    margin: 10px;
+    height: 50px;
+    width: 100%;
+    color: var(--color_bg);
+    text-align: center;
+}
+a:link, a:visited,  a:hover, a:active
+{
+    color: var(--color_text_nav);
+    text-decoration: none;
+    
+}
+    .nav a:hover {
+        background-color: var(--color_bg_text);
+        color: var(--c_text);
+        transition: 0.4s;
+        
+        
+    }
+
+.nav ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.nav li{
+  display: inline-block;
+  margin: 15px;
+  vertical-align: text-top;   
+  
+}
+
+
+.main {
+    margin: auto;
+    font-size: 20px;
+    width: 70%;
+    text-align: justify;
+    background-color: var(--color_bg);
+}
+.header{
+    padding: 30px;
+    text-align: center;
+    background-color: #000000;
+    color: var(--color_text);
+}
+.header h1{
+    text-transform: uppercase;
+    
+    
+}
+.header img{
+    float: left;
+    width: 80px;
+    
+
+}
+.banner img{width: 100%;}
+
+.conteudo{display: flex;
+    width: 100%;
+    text-align: center;
+    margin: auto;}
+
+
+.box1{padding: 15px;
+    color: var(--color_text);}
+
+
+
+.box2{padding: 15px;
+    color: var(--color_text);}
+
+
+
+.footer{
+    
+    text-align: center;
+    color: var(--color_text);
+    background-color: var(--footer);
+    font-size: 15px;
+    
+    
+}
+
+@media screen and (max-width: 1024px){
+    .main{
+        width: 85%;
+    }
+    
+}
+@media screen and (max-width: 765px){
+    .header img{
+        width: 50px;
+    }
+   
+    .nav{
+        flex-direction: column;
+        height: 100px;
+    }
+    .main{
+        width: auto;
+        font-size: 14px;
+    }
+    .conteudo{
+        flex-direction: column;
+    }
+}
